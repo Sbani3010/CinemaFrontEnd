@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  /* From https://css.glass */
+  /* margin-top: 12px; */
+  background: rgb(16, 16, 16);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(16.1px);
+-webkit-backdrop-filter: blur(16.1px);
+border-bottom: 1px solid rgba(255, 255, 255, 0.23); */
+}
+.banner-content {
+  background: rgba(15, 15, 15, 0.311);
+}
+.btn-book {
+  background: orange;
+  width: 150px;
+  height: 45px;
+}
+.card img {
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 14px;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.now-showing::-webkit-scrollbar {
+  display: none;
+}

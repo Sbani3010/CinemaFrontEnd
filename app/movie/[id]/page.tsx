@@ -9,9 +9,11 @@ const Page = async ({ params }: { params: { id: string } }) => {
   return (
     <>
       <NavBar />
+
+
       <PageHead id={params.id}/>
     </>
-  );
+  );  
 };
 
 export default Page;

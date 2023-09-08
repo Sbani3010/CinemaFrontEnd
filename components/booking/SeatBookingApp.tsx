@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import sendBookingConfirmationEmail from './emailSender';
 
 
-import { generateStaticMovie, generateStaticGenres, getTrailer } from '@/components/movie/PageHead'; 
+import { generateStaticMovie, generateStaticGenres, getTrailer } from '@/components/movie/PageHead';
 
 // movie data
 interface MovieData {
@@ -31,7 +31,7 @@ const SeatBookingApp: React.FC<SeatBookingAppProps> = ({ showId }) => {
 
   for (let row = 'A'; row <= 'Z'; row = String.fromCharCode(row.charCodeAt(0) + 1)) {
     const rowSeats: Seat[] = [];
-    
+
     for (let col = 1; col <= 26; col++) {
       const seatId = `${row}${col}`;
       const seat: Seat = {
@@ -40,10 +40,10 @@ const SeatBookingApp: React.FC<SeatBookingAppProps> = ({ showId }) => {
         col: col,
         booked: false,
       };
-      
+
       rowSeats.push(seat);
     }
-    
+
     initialSeats.push(rowSeats);
   }
 
@@ -75,7 +75,7 @@ const SeatBookingApp: React.FC<SeatBookingAppProps> = ({ showId }) => {
         console.log('Booking successful:', data);
         // const movieName = Response.data.movieName;
         // const totalAmount = Response.data.totalAmount;
-    
+
         // Update the seat state to mark them as booked
         const updatedSeats = seats.map((row) =>
           row.map((seat) =>
@@ -83,18 +83,18 @@ const SeatBookingApp: React.FC<SeatBookingAppProps> = ({ showId }) => {
           )
         );
         setSeats(updatedSeats);
-    //     setSelectedSeats([]);
-    //     // Send the booking confirmation email
-    // // Send the booking confirmation email
-    // sendBookingConfirmationEmail(
-    //   'user_email@example.com', // Replace with the user's email
-    //   movieName, // Use movieName directly from response.data
-    //   selectedSeats, // Pass the selected seats
-    //   totalAmount // Use totalAmount directly from response.data
-    
-  })
+        //     setSelectedSeats([]);
+        //     // Send the booking confirmation email
+        // // Send the booking confirmation email
+        // sendBookingConfirmationEmail(
+        //   'user_email@example.com', // Replace with the user's email
+        //   movieName, // Use movieName directly from response.data
+        //   selectedSeats, // Pass the selected seats
+        //   totalAmount // Use totalAmount directly from response.data
 
-      
+      })
+
+
       .catch((error) => console.error('Error booking:', error));
   };
 
@@ -142,9 +142,8 @@ const SeatBookingApp: React.FC<SeatBookingAppProps> = ({ showId }) => {
             {row.map((seat) => (
               <div
                 key={seat.id}
-                className={`w-8 h-8 m-1 rounded-lg cursor-pointer ${
-                  seat.booked ? 'bg-blue-500' : 'bg-gray-200'
-                } ${selectedSeats.includes(seat.id) ? 'border-2 border-yellow-400' : ''}`}
+                className={`w-8 h-8 m-1 rounded-lg cursor-pointer ${seat.booked ? 'bg-blue-500' : 'bg-gray-200'
+                  } ${selectedSeats.includes(seat.id) ? 'border-2 border-yellow-400' : ''}`}
                 onClick={() => toggleSeat(seat.id)}
               ></div>
             ))}
@@ -154,9 +153,8 @@ const SeatBookingApp: React.FC<SeatBookingAppProps> = ({ showId }) => {
       <div className="text-center mt-4">
         <button
           onClick={handleBook}
-          className={`bg-gold text-white px-4 py-2 rounded-lg mx-2 ${
-            selectedSeats.length === 0 ? 'cursor-not-allowed opacity-50' : ''
-          }`}
+          className={`bg-gold text-white px-4 py-2 rounded-lg mx-2 ${selectedSeats.length === 0 ? 'cursor-not-allowed opacity-50' : ''
+            }`}
           disabled={selectedSeats.length === 0}
         >
           Book ({bookingPrice}R)

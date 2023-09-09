@@ -3,7 +3,7 @@ import NavBar from "@/components/NavBar";
 import NowShowing from "@/components/home/NowShowing";
 
 export async function generateStaticMovies() {
-  const posts = await fetch("http://192.168.11.156:8084/movie/all", {
+  const posts = await fetch("http:/192.168.3.3:8084/movie/all", {
     method: "GET",
   }).then((res) => res.json());
   return posts;

@@ -17,16 +17,16 @@ function About() {
         <h2 className="text-gold text-2xl mt-6">For More Information:</h2>
         <ul className="text-left mt-2">
           <li>
-            <a className="text-blue-500" href="https://www.YourMovieBookingSite.com" target="_blank" rel="noopener noreferrer">Website</a>
+            <a className="text-blue-500" href="https://www.sss.co.za" target="_blank" rel="noopener noreferrer">Website</a>
           </li>
           <li>
-            <a className="text-blue-500" href="https://www.facebook.com/YourMovieBooking" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a className="text-blue-500" href="https://www.facebook.com/SapphireScreenStudios" target="_blank" rel="noopener noreferrer">Facebook</a>
           </li>
           <li>
-            <a className="text-blue-500" href="https://twitter.com/YourMovieBooking" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a className="text-blue-500" href="https://twitter.com/SaphireScreenStudios" target="_blank" rel="noopener noreferrer">Twitter</a>
           </li>
           <li>
-            <a className="text-blue-500" href="https://www.instagram.com/YourMovieBooking" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a className="text-blue-500" href="https://www.instagram.com/SaphireScreenStudios" target="_blank" rel="noopener noreferrer">Instagram</a>
           </li>
         </ul>
         <p className="mt-4">

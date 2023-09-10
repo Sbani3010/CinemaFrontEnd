@@ -50,6 +50,7 @@ function BookingConfirmation() {
 
   return (
     <div>
+      <h1> Saphire Screen Studios</h1>
       <h2>Booking Confirmation</h2>
       {pdfUrl && (
         <iframe

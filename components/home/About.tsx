@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 function About() {
   return (
-    <div className="bg-black text-white min-h-screen flex items-center justify-center">
+    <div className=" min-h-screen flex items-center justify-center">
       <Head>
         <title>About Us</title>
       </Head>

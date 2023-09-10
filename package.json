@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@types/node": "20.5.1",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
@@ -17,8 +18,9 @@
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.16.1",
-    "movie-trailer": "^3.0.2",
+    "movie-trailer": "^1.0.4",
     "next": "13.4.19",
+    "pdf-lib": "^1.17.1",
     "popmotion": "^11.0.5",
     "postcss": "8.4.28",
     "react": "18.2.0",

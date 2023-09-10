@@ -12,7 +12,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
       <PageHead id={params.id} />
       <MovieShows id={params.id} />
     </>
-  );
+  );  
 };
 
 export default Page;

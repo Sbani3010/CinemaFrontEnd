@@ -1,3 +1,5 @@
+// import { type } from "os";
+
 export type Movie = {
   movie_id: string;
   title: string;
@@ -14,3 +16,5 @@ export type Movies = {
 export type MovieData = {
   movie: Movie;
 };
+
+

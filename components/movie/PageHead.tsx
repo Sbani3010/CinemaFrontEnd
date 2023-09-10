@@ -2,17 +2,18 @@
 import axios from "axios";
 import { ResolvingMetadata, Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import YouTube, { YouTubePlayer } from "react-youtube";
 export async function generateStaticMovie(str: string) {
-  const req = await fetch("http://192.168.11.156:8084/movie/" + str).then(
-    (res) => res.json()
+  const req = await fetch("http://localhost:8084/movie/" + str).then((res) =>
+    res.json()
   );
-  console.log(req);
+  // console.log(req);
   return req;
 }
 export async function generateStaticGenres(str: string) {
   const req = await axios
-    .get("http://192.168.11.156:8084/movie/" + str)
+    .get("http://localhost:8084/movie/" + str)
     .then((res) => res.data.genres);
   // console.log(req);
   return req;
@@ -23,8 +24,7 @@ export async function getTrailer(str: string) {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzODVmMWU4NTUxOGM2NDRkYTJjOWUzOWY3ZWZkNGQxNyIsInN1YiI6IjYwYmMyZWI1Y2E0ZjY3MDA1OWUyMzBkNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.pwdrejarorYnUj1DOhlfP_Q4GYKqGP6W41SR31UT0iI",
+      Authorization: "Bearer " + process.env.API_KEY,
     },
   };
 

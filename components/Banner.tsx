@@ -1,11 +1,9 @@
 import { Movies } from "@/utils/MoviesType";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 const Banner = ({ movies }: Movies) => {
-  const movie = movies.filter(
-    (x) =>
-      x.movie_id == "447277" || x.movie_id == "565770" || x.movie_id == "496450"
-  )[Math.floor(Math.random() * 3)];
+  const movie = movies[Math.floor(Math.random() * 10)];
   function makeStrShorter(str: string) {
     return str.length > 250 ? str.substring(0, 250) + "..." : str;
   }
@@ -18,7 +16,9 @@ const Banner = ({ movies }: Movies) => {
         <div className=" text-slate-50 relative ">
           <h1 className="text-5xl mb-2 font-bold">{movie.title}</h1>
           <p className="pb-7 w-1/2">{makeStrShorter(movie.overview)}</p>
-          <button className="btn-book">Book Now</button>
+          <Link href={""} className="btn-book btn">
+            Book Now
+          </Link>
         </div>
       </div>
       <Image

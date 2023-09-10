@@ -40,3 +40,17 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.23); */
 .now-showing::-webkit-scrollbar {
   display: none;
 }
+input {
+  border: 1px solid rgb(201, 29, 29);
+}
+
+.btn {
+  /* background: #373535; */
+  border-radius: 12px;
+  padding: 12px 25px;
+  border: 1px solid orange;
+}
+
+.bg-modal{
+  background-color: rgba(0, 0, 0, 0.612);
+}

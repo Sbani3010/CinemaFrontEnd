@@ -4,7 +4,7 @@ import { ResolvingMetadata, Metadata } from "next";
 import Image from "next/image";
 import YouTube, { YouTubePlayer } from "react-youtube";
 export async function generateStaticMovie(str: string) {
-  const req = await fetch("http://192.168.11.156:8084/movie/" + str).then(
+  const req = await fetch("http://192.168.3.3:8084/movie/" + str).then(
     (res) => res.json()
   );
   console.log(req);
@@ -12,7 +12,7 @@ export async function generateStaticMovie(str: string) {
 }
 export async function generateStaticGenres(str: string) {
   const req = await axios
-    .get("http://192.168.11.156:8084/movie/" + str)
+    .get("http://192.168.3.3:8084/movie/" + str)
     .then((res) => res.data.genres);
   // console.log(req);
   return req;

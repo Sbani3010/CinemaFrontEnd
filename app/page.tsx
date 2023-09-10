@@ -1,9 +1,10 @@
 import Banner from "@/components/Banner";
 import NavBar from "@/components/NavBar";
 import NowShowing from "@/components/home/NowShowing";
+import "../styles/globals.css"
 
 export async function generateStaticMovies() {
-  const posts = await fetch("http://192.168.11.156:8084/movie/all", {
+  const posts = await fetch("http://localhost:8084/movie/all", {
     method: "GET",
   }).then((res) => res.json());
   return posts;
@@ -15,7 +16,7 @@ const Page = async () => {
   return (
     <>
       <NavBar />
-      <Banner movies={data} />
+      {<Banner movies={data} />}
       <NowShowing movies={data} />
     </>
   );

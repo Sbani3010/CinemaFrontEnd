@@ -41,3 +41,33 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.23); */
   display: none;
 }
 .twala{color: aqua;}
+
+#Section_footer{
+  width: 100%;
+  background: rgb(16, 16, 16);;
+  position:absolute;
+
+}
+
+#Section_footer a,span {
+    color: #fff;
+    font-size: .80em;
+    text-decoration: none;
+  }
+  #Section_footer a:hover{
+    text-decoration: underline;
+  }
+
+ #Section_footer p{
+    color: #fff;
+    font-size: .6em;
+  }
+  #Icon{
+    font-size: 1.5rem;
+  }
+  .contact-info{
+    color: #fff;
+  } 
+
+
+

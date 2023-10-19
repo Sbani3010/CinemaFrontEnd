@@ -26,7 +26,7 @@ export default function Register() {
   };
 
   return (
-    <><NavBar />
+    <>git
     <div className="flex justify-center items-center h-screen">
       <div className="w-1/2">
         <h2 className="text-center font-bold text-purple-600 text-2xl">Register</h2>

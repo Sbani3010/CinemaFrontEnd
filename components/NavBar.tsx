@@ -22,6 +22,10 @@ const NavBar = () => {
       link: "/about",
     },
     {
+      name: "Contact",
+      link: "/contact",
+    },
+    {
       name: "Login/Register",
       link: "/login",
     },

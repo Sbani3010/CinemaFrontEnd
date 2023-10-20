@@ -25,6 +25,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.23); */
   height: 45px;
 }
 .card img {
+  width: 15rem;
 }
 .card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -33,6 +34,10 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.23); */
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  width: 15rem;
+  margin: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: white;
 }
 .card:hover {
   transform: scale(1.02);
@@ -54,3 +59,14 @@ input {
 .bg-modal{
   background-color: rgba(0, 0, 0, 0.612);
 }
+
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+

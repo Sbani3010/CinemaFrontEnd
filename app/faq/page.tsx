@@ -2,7 +2,6 @@ import NavBar from "@/components/NavBar";
 import React from "react";
 
 export default function FAQ() {
-  
   return (
     <div className="text-center">
       <body>
@@ -86,7 +85,7 @@ export default function FAQ() {
         <footer>
       {/*--------------------------top footer division ---------------------------------------------------*/}
       <div className="tfoot">
-        {/*-------------------------------------left1---------------------------------------------------*/}
+        {/*-------left1--------*/}
         <div id="footerLeft1">
           <h3>Services:</h3>
           <p>Tips for Customers</p>
@@ -95,7 +94,7 @@ export default function FAQ() {
           <p>And more</p>
         </div>
 
-        {/*----------------------PARTNERS---------------------------------------------------------------*/}
+        {/*------PARTNERS-------*/}
         <div id="footerCenter">
           <h3>Partners:</h3>
           <p>
